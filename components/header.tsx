@@ -21,22 +21,22 @@ export default function Header() {
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="#servicios" className="text-sm font-medium hover:text-[#6E56A7] transition-colors">
+          <Link href="/#servicios" className="text-sm font-medium hover:text-[#6E56A7] transition-colors">
             Servicios
           </Link>
-          <Link href="#metodologia" className="text-sm font-medium hover:text-[#6E56A7] transition-colors">
+          <Link href="/#metodologia" className="text-sm font-medium hover:text-[#6E56A7] transition-colors">
             Metodología
           </Link>
-          <Link href="#testimonios" className="text-sm font-medium hover:text-[#6E56A7] transition-colors">
+          <Link href="/#testimonios" className="text-sm font-medium hover:text-[#6E56A7] transition-colors">
             Testimonios
           </Link>
           <Link href="/citas" className="text-sm font-medium hover:text-[#6E56A7] transition-colors">
             Reservar Cita
           </Link>
-          <Link href="#contacto" className="text-sm font-medium hover:text-[#6E56A7] transition-colors">
+          <Link href="/#contacto" className="text-sm font-medium hover:text-[#6E56A7] transition-colors">
             Contacto
           </Link>
-          <Link href="#contacto" className="text-sm font-medium hover:text-[#6E56A7] transition-colors">
+          <Link href="/#contacto" className="text-sm font-medium hover:text-[#6E56A7] transition-colors">
             <Button className="bg-[#6E56A7] hover:bg-[#5d4890] text-white">Solicitar Información</Button>
           </Link>
         </nav>
@@ -49,22 +49,25 @@ export default function Header() {
           </SheetTrigger>
           <SheetContent side="right">
             <nav className="flex flex-col gap-4 mt-8">
-              <Link href="#servicios" className="text-base font-medium hover:text-[#6E56A7] transition-colors">
+              <Link href="/#servicios" className="text-base font-medium hover:text-[#6E56A7] transition-colors">
                 Servicios
               </Link>
-              <Link href="#metodologia" className="text-base font-medium hover:text-[#6E56A7] transition-colors">
+              <Link href="/#metodologia" className="text-base font-medium hover:text-[#6E56A7] transition-colors">
                 Metodología
               </Link>
-              <Link href="#testimonios" className="text-base font-medium hover:text-[#6E56A7] transition-colors">
+              <Link href="/#testimonios" className="text-base font-medium hover:text-[#6E56A7] transition-colors">
                 Testimonios
               </Link>
               <Link href="/citas" className="text-base font-medium hover:text-[#6E56A7] transition-colors">
                 Reservar Cita
               </Link>
-              <Link href="#contacto" className="text-base font-medium hover:text-[#6E56A7] transition-colors">
+              <Link href="/#contacto" className="text-base font-medium hover:text-[#6E56A7] transition-colors">
                 Contacto
               </Link>
-              <Button className="bg-[#6E56A7] hover:bg-[#5d4890] text-white w-full mt-2">Solicitar Información</Button>
+              {/* Assuming the button should also link to the contact section on the homepage */}
+              <Link href="/#contacto" className="w-full mt-2">
+                <Button className="bg-[#6E56A7] hover:bg-[#5d4890] text-white w-full">Solicitar Información</Button>
+              </Link>
             </nav>
           </SheetContent>
         </Sheet>
